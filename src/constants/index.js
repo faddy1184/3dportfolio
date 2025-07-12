@@ -19,9 +19,9 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    itask,
+    mytextutils,
+    baitunnasr,
     threejs,
   } from "../assets";
   
@@ -198,9 +198,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "i-Task Planner",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "i Task Planner helps you organize your daily schedule with ease. Simply create, manage, and track your tasks . Stay on top of your routine with a user-friendly, simple interface designed.",
       tags: [
         {
           name: "react",
@@ -215,13 +215,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: itask,
+      source_code_link: "https://itask-planner.netlify.app/",
     },
     {
-      name: "Job IT",
+      name: "MyTextUtils",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "A simple, user-friendly tool for converting text to uppercase, lowercase, cleaning formatting, copying content, and enhancing text editing productivity online.",
       tags: [
         {
           name: "react",
@@ -232,33 +232,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: mytextutils,
+      source_code_link: "https://mytextutils.netlify.app/",
     },
     {
-      name: "Trip Guide",
+      name: "BaitUnNasr.Co-Op",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A responsive platform for Bait-un-Nasr Co-operative Bank providing banking services, updates, forms, loan details, announcements, and customer-centric financial information.",
       tags: [
         {
-          name: "nextjs",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: baitunnasr,
+      source_code_link: "https://bait-un-nasr.netlify.app/",
     },
   ];
   

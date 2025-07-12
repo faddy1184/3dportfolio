@@ -8,6 +8,8 @@ import Works from './Works.jsx';
 import Feedbacks from './Feedbacks.jsx';
 import Contact from './Contact.jsx';
 import Footer from './Footer.jsx';
+import Register from './Register.jsx';
+import Login from './Login.jsx';
 
 
 export {
@@ -23,5 +25,7 @@ export {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
-  Footer, 
+  Footer,
+  Register,
+  Login
 };

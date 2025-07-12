@@ -1,10 +1,9 @@
 import React from "react";
-import { Tilt } from "react-tilt";
+import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 import '../index.css'; // Import your CSS file
-
-import { styles } from "../styles";
-import { services } from "../constants"; // Ensure this is correctly defined
+import { styles } from "../styles"; // Ensure this is defined properly
+import { services } from "../constants"; // Ensure services array is properly defined
 import { SectionWrapper } from "../hoc"; // Ensure this is correctly defined
 import { fadeIn, textVariant } from "../utils/motion"; // Ensure this is correctly defined
 
@@ -31,7 +30,7 @@ const ServiceCard = ({ index, title, icon }) => (
       >
         <img
           src={icon}
-          alt="web-development"
+          alt={title} // Better alt text for accessibility
           className="w-24 h-24 object-contain" // Bigger icon
         />
         <h3 className="text-white text-[24px] font-bold">{title}</h3> {/* Larger text */}
@@ -59,13 +58,16 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
-      <div className='mt-10 flex flex-wrap justify-center  items-center gap-10'>
-        {services.map((service, index) => (
-          <div className='flex-wrap w-[45%] items-center md:w-[22.5%]' key={service.title}> {/* 2 cards per row on small screens, adjust on larger screens */}
-            <ServiceCard index={index} {...service} />
-          </div>
-        ))}
-      </div>
+      <div className='mt-10 flex flex-wrap justify-center items-center gap-10'>
+  {services.map((service, index) => (
+    <div
+      className='w-full sm:w-[45%] md:w-[22.5%] lg:w-[18%] xl:w-[16%] 2xl:w-[14%] items-center' // Adjust width responsively for different screen sizes
+      key={service.title}
+    >
+      <ServiceCard index={index} {...service} />
+    </div>
+  ))}
+</div>
     </>
   );
 };
