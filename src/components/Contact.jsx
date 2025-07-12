@@ -44,7 +44,7 @@ const Contact = () => {
         return;
       }
 
-      const response = await fetch("https://3dportfolio-lime.vercel.app/contact", {
+      const response = await fetch("https://backend-one-sable.vercel.app/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
