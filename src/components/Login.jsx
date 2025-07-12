@@ -30,7 +30,7 @@ const Login = ({ setIsAuthenticated }) => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5000/login", {
+      const response = await fetch("https://3dportfolio-lime.vercel.app/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
