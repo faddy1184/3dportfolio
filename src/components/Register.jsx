@@ -28,7 +28,7 @@ const Register = () => {
     setError(null);
 
     try {
-      const response = await fetch("https://backend-one-sable.vercel.app/register", {
+      const response = await fetch("https://backend-5mro.onrender.com/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
