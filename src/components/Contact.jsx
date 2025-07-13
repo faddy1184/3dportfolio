@@ -44,7 +44,7 @@ const Contact = () => {
         return;
       }
 
-      const response = await fetch("https://backend-one-sable.vercel.app/contact", {
+      const response = await fetch("https://backend-5mro.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
